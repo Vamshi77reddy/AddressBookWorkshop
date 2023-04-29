@@ -24,10 +24,38 @@
         <div class="form-content">
             <form class="form" action="#" onsubmit="save(event);return false">
                 <div class="form-head">ADDRESS BOOK FORM</div>
-                <div class="row-content">
                     <div class="cancle-button">
                         <img src="assets\cancelButton.png"width="43px" height="43px" alt="">
-
                     </div>
+                    <div class="row-content">
+                    <input class="input" type="text" id="name" name="name" placeholder="Enter Your name " required>
+                    </div>
+                    <div class="row-content">
+                    <input class="input" type="text" id="Address" name="address" placeholder="Enter Your address " required>
+                    </div>
+                    <div class="row-content">
+                        <input class="input" type="text" id="Phone Number " name="phone number" placeholder="Enter Your phone number " required>
+                        </div>
+                        <div class="row-content">
+                            <label class="label text" for="select">select</label>
+                            <select id="city" name="city" required>
+                                <option value="Visakhapatnam">Visakhapatnam</option>
+                                <option value="Hyderabad">Hyderabad</option>
+                                <option value="Mumbai">Mumbai</option>
+                                <option value="Banglore">Banglore</option>
+                                <option value="Delhi">Delhi</option>
+                                <option value="Kochi">Kochi</option>
+                                <option value="Vijayawada">Vijayawada</option>
+                                <option value="Kolkata">Kolkata</option>
+                            </select>
+                            <select id="state" name="state">
+                                <option value="Andhra Pradesh">Andhra Pradesh</option>
+                                <option value="Telangana">Telangana</option>
+                                <option value="Maharastra">Maharastra</option>
+                                <option value="Karnataka">Karnataka</option>
+                                <option value="New Delhi">New Delhi</option>
+                                <option value="Kerala">Kerala</option>
+                                <option value="West Bengal">West Bengal</option>
+                            </select>
 </body>
 </html>
