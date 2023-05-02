@@ -36,7 +36,7 @@
   }
   
   .add-book {
-    color: rgb(92, 92, 92);
+    color: white;
   }
   
   .form-content {
@@ -48,7 +48,7 @@
     background-color: rgb(219, 213, 213);
     align-items: center;
     border: 0px solid blue;
-    border-radius: 5px;
+    border-radius: 0px;
   }
   
   .form {
@@ -56,7 +56,7 @@
     border: 0px solid blue;
     opacity: 1;
     background-color: #ffffff;
-    border-radius: 20px;
+    border-radius: 0px;
   }
   
   .form-head {
@@ -72,7 +72,7 @@
     margin-bottom: 7%;
     padding-left: 35%;
     border: 0px solid black;
-    border-radius: 5px;
+    border-radius: 0px;
   }
   
   .form-heading {
@@ -100,7 +100,7 @@
     padding: 12px;
     border: 1px solid rgb(194, 194, 194);
     border-radius: 5px;
-    background-color: rgb(211, 210, 210);
+    background-color: white;
     color: black;
     font-weight: bold;
     resize: vertical;
@@ -121,11 +121,11 @@
     letter-spacing: 0px;
     resize: vertical;
     color: #424242;
-    background-color: rgb(211, 210, 210);
+    background-color: white;
   }
   .zip-text {
     border-radius: 5px;
-    background-color: rgb(211, 210, 210);
+    background-color: white;
     color: black;
     font-weight: bold;
   }
