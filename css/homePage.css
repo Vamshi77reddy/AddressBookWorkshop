@@ -1,0 +1,107 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  .header {
+    padding: 5px 0;
+    background-color: whitesmoke;
+  }
+  
+  .header-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    border: 0px solid rgb(0, 162, 255);
+  }
+  
+  .main-content {
+    display: flex;
+    flex-direction: column;
+    min-height: calc(100vh - 80px);
+    background-color: #bfd8ef;
+    padding: 30px 0 10px;
+    box-sizing: border-box;
+  }
+  
+  .address-book-text {
+    font-size: 23px;
+    font-weight: bold;
+    letter-spacing: 0px;
+    color: #42515f;
+    opacity: 1;
+  }
+  
+  .person-count {
+    background-color: #0084ff;
+    color: #ffffff;
+    border-radius: 60%;
+    width: 26px;
+    font-size: 20px;
+    text-align: center;
+    display: inline-block;
+  }
+  
+  .add-button {
+    display: flex;
+    flex-direction: row;
+    font-size: 17px;
+    letter-spacing: 0px;
+    color: #ffffff;
+    background: #0084ff 0% 0% no-repeat padding-box;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 18px;
+    outline: none;
+    cursor: pointer;
+    text-decoration: none;
+  }  
+  .table {
+    width: 80%;
+    margin: 10%;
+    margin-top: 3px;
+    min-width: 800px;
+    border-collapse: separate;
+    border-spacing: 0 15px;
+    border: 0px solid #0084ff;
+  }
+  
+  td,
+  th {
+    text-align: center;
+    padding: 5px 8px;
+  }
+  
+  th {
+    background: grey;
+    text-align: center;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 900;
+    letter-spacing: 0px;
+    color: #f4f4f4;
+    opacity: 1;
+    padding: 10px;
+    border: 2px solid #030202;
+    padding-bottom: 6px;
+  }
+  
+  tr:not(:first-child) {
+    background: #ffffff;
+    border: 1px solid#e3e3e3;
+  }
+  
+  td {
+    text-align: center;
+    font-size: 14px;
+    padding: 20px;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 1;
+    border: px solid gainsboro;
+  }
+  
+  

@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600&display=swap" rel="stylesheet">
     <title>ADDRESS BOOK</title>
+    <script src="js\Addressbook.js"></script>
+    <script src="js\eventListner.js"></script>
     <link rel="stylesheet" href="css\form.css">
 
 </head>
@@ -23,21 +25,23 @@
         </header>
         <div class="form-content">
             <form class="form" action="#" onsubmit="save(event);return false">
-                <div class="form-head">ADDRESS BOOK FORM</div>
-                    <div class="cancle-button">
-                        <img src="assets\cancelButton.png"width="43px" height="43px" alt="">
+                <div class="form-head">ADDRESS BOOK FORM
+                    <div class="cancel-button">
+                        <img src="assets\cancelButton.png"width="43px" height="43px" alt="cancel"></a>
                     </div>
+                </div>
                     <div class="row-content">
+                        <label for="name" class="lable text">Full Name</label>
                     <input class="input" type="text" id="name" name="name" placeholder="Enter Your name " required>
                     </div>
+                    <div><error-output class="text-error" for="text"></error-output></div>
                     <div class="row-content">
-                    <input class="input" type="text" id="Address" name="address" placeholder="Enter Your address " required>
+                        <label for="address" class="label text">Address</label>
+                    <input class="input" type="text" id="address" name="address" placeholder="Enter Your address " required>
                     </div>
-                    <div class="row-content">
-                        <input class="input" type="text" id="Phone Number " name="phone number" placeholder="Enter Your phone number " required>
-                        </div>
+                    <div><error-output class="address-error" for="text"></error-output></div>
                         <div class="row-content">
-                            <label class="label text" for="select">select</label>
+                            <label class="label text" for="city">City</label>
                             <select id="city" name="city" required>
                                 <option value="Visakhapatnam">Visakhapatnam</option>
                                 <option value="Hyderabad">Hyderabad</option>
@@ -48,6 +52,7 @@
                                 <option value="Vijayawada">Vijayawada</option>
                                 <option value="Kolkata">Kolkata</option>
                             </select>
+                            <label class="label text" for="state">State</label>
                             <select id="state" name="state">
                                 <option value="Andhra Pradesh">Andhra Pradesh</option>
                                 <option value="Telangana">Telangana</option>
@@ -57,5 +62,23 @@
                                 <option value="Kerala">Kerala</option>
                                 <option value="West Bengal">West Bengal</option>
                             </select>
+                            <label class="label text" for="zipcode">Zipcode</label>
+                            <input class="zip-text" id="zipcode" name="zipcode" type="text" placeholder="Zip Code">
+                        </div>
+                        <div><error-output class="zip-error" for="text"></error-output></div>
+                        <div class="row-content">
+                            <label for="phone" class="label text">Phone</label>
+                            <input id="phone" type="text" class="input" name="phone" placeholder="Phone Number"></input>
+                        </div>
+                        <div><error-output class="number-error" for="text"></error-output></div>
+                        <div class="buttonParent">
+                            <div class="add-reset">
+                                <button type="submit" class="button addButton" id="addButton">Add</button>
+                                <button type="reset" class="resetButton button" id="resetButton">Reset</button>
+                            </div>
+                        
+            </form> 
+        </div>
+
 </body>
 </html>
